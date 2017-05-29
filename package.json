@@ -3,7 +3,7 @@
   "productName": "rqc-dashboard",
   "version": "0.0.1",
   "description": "My Electron application description",
-  "main": "src/index.js",
+  "main": "src/index.ts",
   "repository": {
     "type": "git",
     "url": "git+ssh://git@github.com/wasd171/chatinder.git"
@@ -64,15 +64,20 @@
     "react-router-dom": "^4.1.1",
     "redux": "^3.6.0",
     "simplebar": "^2.4.1",
-    "styled-components": "^2.0.0"
+    "styled-components": "^2.0.0",
+    "tslib": "^1.7.1"
   },
   "devDependencies": {
+    "@types/bluebird": "^3.5.4",
+    "@types/electron": "^1.4.38",
     "cross-env": "^5.0.0",
     "devtron": "^1.4.0",
     "electron-debug": "^1.1.0",
     "electron-devtools-installer": "^2.2.0",
+    "electron-forge": "^3.0.3",
     "electron-prebuilt-compile": "1.6.11",
     "husky": "^0.13.4",
-    "rimraf": "^2.6.1"
+    "rimraf": "^2.6.1",
+    "typescript": "^2.3.3"
   }
 }
