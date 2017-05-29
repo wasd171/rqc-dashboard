@@ -1,0 +1,1 @@
+export const REQUEST_ROOTDIR = 'REQUEST_ROOTDIR'
