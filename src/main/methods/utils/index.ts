@@ -1,0 +1,1 @@
+export {installExtensions} from './installExtensions'
