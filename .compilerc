@@ -1,0 +1,48 @@
+{
+    "env": {
+        "development": {
+            "text/typescript": {
+                "removeComments": false,
+                "preserveConstEnums": true,
+                "sourceMap": true,
+                "inlineSourceMap": true,
+                "declaration": true,
+                "noImplicitAny": true,
+                "noImplicitReturns": true,
+                "suppressImplicitAnyIndexErrors": true,
+                "strictNullChecks": true,
+                "noUnusedLocals": true,
+                "noImplicitThis": true,
+                "noUnusedParameters": true,
+                "importHelpers": true,
+                "noEmitHelpers": true,
+                "module": "commonjs",
+                "moduleResolution": "node",
+                "pretty": true,
+                "target": "es6",
+                "jsx": "react"
+            }
+        },
+        "production": {
+            "text/typescript": {
+                "removeComments": true,
+                "preserveConstEnums": true,
+                "sourceMap": false,
+                "noImplicitAny": true,
+                "noImplicitReturns": true,
+                "suppressImplicitAnyIndexErrors": true,
+                "strictNullChecks": true,
+                "noUnusedLocals": true,
+                "noImplicitThis": true,
+                "noUnusedParameters": true,
+                "importHelpers": true,
+                "noEmitHelpers": true,
+                "module": "umd",
+                "moduleResolution": "node",
+                "pretty": false,
+                "target": "es6",
+                "jsx": "react"
+            }
+        }
+    }
+}
