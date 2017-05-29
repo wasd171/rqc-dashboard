@@ -19,7 +19,7 @@ export function startFactory(instance: Main) {
             }
         })
 
-        instance.window.loadURL(`file://${instance.root}/index.html`)
+        instance.window.loadURL(`file://${instance.root}/index.jade`)
 
         if (process.env.NODE_ENV === 'development') {
             enableLiveReload()
