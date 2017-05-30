@@ -2,6 +2,7 @@
     "env": {
         "development": {
             "text/typescript": {
+                "baseUrl": "./src",
                 "removeComments": false,
                 "preserveConstEnums": true,
                 "sourceMap": true,
@@ -25,6 +26,7 @@
         },
         "production": {
             "text/typescript": {
+                "baseUrl": "./src",
                 "removeComments": true,
                 "preserveConstEnums": true,
                 "sourceMap": false,
