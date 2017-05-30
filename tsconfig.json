@@ -18,7 +18,8 @@
     "moduleResolution": "node",
     "pretty": true,
     "target": "es6",
-    "jsx": "react"
+    "jsx": "react",
+    "experimentalDecorators": true
   },
   "formatCodeOptions": {
     "indentSize": 4,

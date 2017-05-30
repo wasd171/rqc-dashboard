@@ -1,1 +1,1 @@
-export const REQUEST_ROOTDIR = 'REQUEST_ROOTDIR'
+export const ID_TOKEN = 'ID_TOKEN'
