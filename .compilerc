@@ -20,7 +20,7 @@
                 "module": "commonjs",
                 "moduleResolution": "node",
                 "pretty": true,
-                "target": "es6",
+                "target": "ES2016",
                 "jsx": "react",
                 "experimentalDecorators": true
             }
@@ -43,7 +43,7 @@
                 "module": "umd",
                 "moduleResolution": "node",
                 "pretty": false,
-                "target": "es6",
+                "target": "ES2016",
                 "jsx": "react",
                 "experimentalDecorators": true
             }
