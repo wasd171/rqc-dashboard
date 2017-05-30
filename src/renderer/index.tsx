@@ -5,8 +5,6 @@ import MetaProvider from './components/MetaProvider'
 import App from './components/App'
 
 ReactDOM.render(
-    <MetaProvider>
-        <App/>
-    </MetaProvider>, 
+    <MetaProvider component={App}/>, 
     document.getElementById('app')
 )
