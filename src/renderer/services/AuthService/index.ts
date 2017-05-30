@@ -1,10 +1,11 @@
 import Auth0LockPasswordless from 'auth0-lock-passwordless'
-import {ID_TOKEN} from 'shared/constants'
+import {ID_TOKEN, USER_ID} from 'shared/constants'
 import {fromCallback} from 'shared/utils'
 
 export class AuthService {
     _lock: Auth0LockPasswordless | null = null;
     token: null | string = localStorage.getItem(ID_TOKEN);
+    userId: null | string = localStorage.getItem(USER_ID);
 
     get lock(): Auth0LockPasswordless {
         if (this._lock === null) {
@@ -27,8 +28,12 @@ export class AuthService {
                     }  else if (id_token == null) {
                         reject(new Error('Received empty id_token from Auth0'))
                     } else {
+                        const {user_id} = profile
                         localStorage.setItem(ID_TOKEN, id_token)
+                        localStorage.setItem(USER_ID, user_id)
                         this.token = id_token
+                        this.userId = user_id
+                        console.log({profile})
 
                         resolve({
                             profile,
