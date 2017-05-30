@@ -1,0 +1,1 @@
+export {fromCallback} from './fromCallback'
