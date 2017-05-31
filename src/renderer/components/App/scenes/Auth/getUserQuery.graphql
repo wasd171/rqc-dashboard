@@ -1,0 +1,7 @@
+query getUserQuery {
+    viewer {
+        user {
+            id
+        }
+    }
+}
