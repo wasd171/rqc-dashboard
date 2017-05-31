@@ -1,0 +1,9 @@
+mutation loginUserMutation($idToken: String!) {
+    loginUserWithAuth0(input: {
+        idToken: $idToken
+    }) {
+        user {
+            id
+        }
+    }
+}
