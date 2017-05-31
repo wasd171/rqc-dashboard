@@ -7,16 +7,16 @@ const authMiddleware = {
             req.options.headers = {}
         }
 
-        const token = authService.token
+        const {token} = authService
         req.options.headers.authorization = token ? `Bearer ${token}` : null
-        
+
         next()
     }
 }
 
 export default function createApolloClient() {
     const networkInterface = createNetworkInterface({
-        uri: 'https://api.graph.cool/simple/v1/cj3akftuupmr701300x8bzwk2'
+        uri: 'https://us-west-2.api.scaphold.io/graphql/placid-nest'
     })
 
     networkInterface.use([authMiddleware])
